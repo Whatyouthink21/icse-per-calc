@@ -86,7 +86,7 @@ function calculate() {
         <strong>Total Marks:</strong> ${totalMarks.toFixed(2)} / 500<br>
         <strong>Percentage:</strong> ${percentage}%<br><br>
         Congratulations for the results! Wishing best of luck for the rest of your lives!<br><br>
-        The Indian Education System is a piece of GOO, accept what marks you got. If someone compares you to toppers, don't listen to them, never. Just ignore them. Everything is not "Marks". The System expects us to do tough things, but without any prior practice. Many have potential to grasp things (they are so called toppers), many take time. At the end, both groups achieve success!JUST FOLLOW YOUR PASSION, DONT LISTEN TO THE WORLD.
+         Accept what marks you got. If someone compares you to toppers, don't listen to them, never. Just ignore them. Everything is not "Marks". The System expects us to do tough things, but without any prior practice. Many have potential to grasp things (they are so called toppers), many take time. At the end, both groups achieve success!JUST FOLLOW YOUR PASSION, DONT LISTEN TO THE WORLD.
     `;
 }
 
@@ -96,3 +96,4 @@ function showError(message) {
     resultBox.style.color = "#991b1b";
     resultBox.innerText = message;
 }
+
