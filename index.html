@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ICSE Percentage Calculator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="app">
+    <img src="assets/icse-logo.png" alt="ICSE Logo" class="logo">
+
+    <h1>ICSE Percentage Calculator</h1>
+    <p class="subtitle">English + Best 4 Subjects</p>
+
+    <div class="card">
+        <!-- Matrix rain background -->
+        <div class="matrix"></div>
+
+        <!-- English -->
+        <h2>English (Compulsory)</h2>
+        <input type="number" id="eng1" placeholder="English 1 (out of 100)">
+        <input type="number" id="eng2" placeholder="English 2 (out of 100)">
+
+        <!-- Math -->
+        <h2>Math (Optional)</h2>
+        <input type="number" id="math" placeholder="Math (out of 100)">
+
+        <!-- Science -->
+        <h2>Science (Optional)</h2>
+        <input type="number" id="phy" placeholder="Physics">
+        <input type="number" id="chem" placeholder="Chemistry">
+        <input type="number" id="bio" placeholder="Biology">
+
+        <!-- Computer -->
+        <h2>Computer (Optional)</h2>
+        <input type="number" id="computer" placeholder="Computer (out of 100)">
+
+        <!-- Hindi -->
+        <h2>Hindi (Optional)</h2>
+        <input type="number" id="hindi" placeholder="Hindi (out of 100)">
+
+        <!-- Social Studies -->
+        <h2>Social Studies (Optional)</h2>
+        <input type="number" id="history" placeholder="History">
+        <input type="number" id="geography" placeholder="Geography">
+
+        <button onclick="calculate()">Calculate Percentage</button>
+
+        <div id="result" class="result hidden"></div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
