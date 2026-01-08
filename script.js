@@ -12,7 +12,7 @@ function calculate() {
     const eng2 = getValue("eng2");
 
     if (eng1 === null || eng2 === null) {
-        showError("English is compulsory. Enter both English marks.");
+        showError("English is compulsory. Enter both English marks and marks of any 4 subjects.");
         return;
     }
 
@@ -47,8 +47,9 @@ function calculate() {
         subjects.push((history + geography) / 2);
     }
 
+    // Check if total subjects (English + optionals) >= 5
     if (subjects.length < 5) {
-        showError("Enter marks for English + any 4 optional subjects.");
+        showError("English is compulsory. Enter both English marks and marks of any 4 subjects.");
         return;
     }
 
