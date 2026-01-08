@@ -2,11 +2,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+    font-family: 'Inter', sans-serif;
 }
 
 body {
-    background: #0b0f0c;
+    background: linear-gradient(180deg, #050b07, #020617);
     color: #e5e7eb;
     min-height: 100vh;
     display: flex;
@@ -14,115 +14,115 @@ body {
     align-items: center;
 }
 
-/* Main Card */
+/* Card */
 .container {
-    background: #111827;
+    background: rgba(2, 6, 23, 0.85);
     width: 100%;
-    max-width: 480px;
-    padding: 28px;
-    border-radius: 14px;
-    border: 1px solid #1f2937;
+    max-width: 520px;
+    padding: 32px;
+    border-radius: 18px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6);
 }
 
 /* Logo */
 .logo {
     display: block;
-    margin: 0 auto 10px;
-    width: 72px;
+    margin: 0 auto 14px;
+    width: 80px;
 }
 
-/* Headings */
+/* Title */
 h1 {
     text-align: center;
     color: #22c55e;
-    margin-bottom: 6px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
 }
 
 .subtitle {
     text-align: center;
-    font-size: 13px;
+    font-size: 14px;
     color: #9ca3af;
-    margin-bottom: 20px;
+    margin: 8px 0 24px;
 }
 
 /* Sections */
 .section {
-    margin-bottom: 18px;
+    margin-bottom: 22px;
 }
 
 .section h3 {
-    font-size: 14px;
+    font-size: 15px;
     color: #86efac;
-    margin-bottom: 6px;
+    margin-bottom: 10px;
 }
 
 /* Inputs */
 input {
     width: 100%;
-    padding: 10px 12px;
-    margin-bottom: 8px;
-    border-radius: 8px;
-    background: #020617;
-    border: 1px solid #1f2937;
-    color: #e5e7eb;
-    outline: none;
-    transition: border 0.2s ease, box-shadow 0.2s ease;
+    padding: 12px 14px;
+    margin-bottom: 10px;
+    border-radius: 12px;
+    background: rgba(15, 23, 42, 0.9);
+    border: none;
+    color: #f9fafb;
+    font-size: 14px;
+    transition: box-shadow 0.2s ease, background 0.2s ease;
 }
 
-/* SUBTLE GLOW (NOT BLINDING) */
+/* Soft focus glow */
 input:focus {
-    border-color: #22c55e;
-    box-shadow: 0 0 0 2px rgba(34,197,94,0.25);
+    outline: none;
+    background: rgba(15, 23, 42, 1);
+    box-shadow: 0 0 0 2px rgba(34, 197, 94, 0.35);
 }
 
 /* Button */
 button {
     width: 100%;
-    padding: 12px;
-    margin-top: 10px;
-    background: #22c55e;
-    color: #052e16;
+    padding: 14px;
+    margin-top: 12px;
+    background: linear-gradient(135deg, #16a34a, #22c55e);
+    color: #022c22;
     border: none;
-    border-radius: 10px;
-    font-size: 15px;
+    border-radius: 14px;
+    font-size: 16px;
     font-weight: 600;
     cursor: pointer;
     transition: transform 0.15s ease, box-shadow 0.15s ease;
 }
 
-/* Button Glow */
 button:hover {
-    box-shadow: 0 8px 22px rgba(34,197,94,0.35);
+    box-shadow: 0 12px 28px rgba(34, 197, 94, 0.45);
 }
 
 button:active {
     transform: scale(0.98);
 }
 
-/* Result Box */
+/* Result */
 .result {
-    margin-top: 18px;
-    padding: 14px;
-    border-radius: 10px;
-    background: #020617;
-    border: 1px solid #1f2937;
+    margin-top: 22px;
+    padding: 18px;
+    border-radius: 14px;
+    background: rgba(15, 23, 42, 0.85);
 }
 
 .result p {
-    margin-bottom: 6px;
+    margin-bottom: 8px;
 }
 
-/* Congrats Text */
+/* Congrats */
 .congrats {
-    margin-top: 10px;
+    margin-top: 14px;
     text-align: center;
-    font-size: 13px;
+    font-size: 14px;
     color: #86efac;
 }
 
 /* Footer */
 .footer {
-    margin-top: 16px;
+    margin-top: 20px;
     text-align: center;
     font-size: 11px;
     color: #6b7280;
